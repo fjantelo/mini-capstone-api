@@ -1,17 +1,11 @@
 class ProductsController < ApplicationController
   def all_products
-    render json: { product_data: Product.all }
+    products = Product.all
+    render json: products.as_json
   end
 
-  def headphones
-    render json: { product_data: Product.first }
-  end
-
-  def skillet
-    render json: { product_data: Product.find_by(id: 2) }
-  end
-
-  def sunglasses
-    render json: { product_data: Product.find_by(id: 3) }
+  def one_product
+    product = Product.find_by(id: params["id"])
+    render json: product.as_json
   end
 end
