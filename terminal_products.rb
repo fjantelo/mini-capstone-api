@@ -1,9 +1,5 @@
 require "http"
-# system "clear"
-
-# # For testing:
-# response = HTTP.get("http://localhost:3000/all_products")
-# puts response.parse(:json)["product_data"].length
+system "clear"
 
 while true
   puts "Welcome to the Mini Capstone API Store. Enter a page number:"
