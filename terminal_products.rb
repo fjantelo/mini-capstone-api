@@ -12,29 +12,29 @@ while true
   selection = gets.chomp
 
   if selection == "0"
-    response = HTTP.get("http://localhost:3000/all_products")
+    response = HTTP.get("http://localhost:3000/products")
     index = 0
-    while index < response.parse(:json)["product_data"].length
-      puts "#{index + 1}. #{response.parse(:json)["product_data"][index]["name"]}"
+    while index < response.parse(:json).length
+      puts "#{index + 1}. #{response.parse(:json)[index]["name"]}"
       index += 1
     end
   elsif selection == "1"
-    response = HTTP.get("http://localhost:3000/headphones")
-    puts "Name: #{response.parse(:json)["product_data"]["name"]}"
-    puts "Price: $#{response.parse(:json)["product_data"]["price"]}"
-    puts "Description: #{response.parse(:json)["product_data"]["description"]}"
+    response = HTTP.get("http://localhost:3000/products/1")
+    puts "Name: #{response.parse(:json)["name"]}"
+    puts "Price: $#{response.parse(:json)["price"]}"
+    puts "Description: #{response.parse(:json)["description"]}"
     puts ""
   elsif selection == "2"
-    response = HTTP.get("http://localhost:3000/skillet")
-    puts "Name: #{response.parse(:json)["product_data"]["name"]}"
-    puts "Price: $#{response.parse(:json)["product_data"]["price"]}"
-    puts "Description: #{response.parse(:json)["product_data"]["description"]}"
+    response = HTTP.get("http://localhost:3000/products/2")
+    puts "Name: #{response.parse(:json)["name"]}"
+    puts "Price: $#{response.parse(:json)["price"]}"
+    puts "Description: #{response.parse(:json)["description"]}"
     puts ""
   elsif selection == "3"
-    response = HTTP.get("http://localhost:3000/sunglasses")
-    puts "Name: #{response.parse(:json)["product_data"]["name"]}"
-    puts "Price: $#{response.parse(:json)["product_data"]["price"]}"
-    puts "Description: #{response.parse(:json)["product_data"]["description"]}"
+    response = HTTP.get("http://localhost:3000/products/3")
+    puts "Name: #{response.parse(:json)["name"]}"
+    puts "Price: $#{response.parse(:json)["price"]}"
+    puts "Description: #{response.parse(:json)["description"]}"
     puts ""
   elsif selection.downcase == "exit"
     break
