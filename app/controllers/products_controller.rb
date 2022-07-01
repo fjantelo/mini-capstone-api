@@ -11,10 +11,10 @@ class ProductsController < ApplicationController
 
   def create
     product = Product.new(
-      name: "JanSport JS0A4QUE008",
-      price: 39,
-      image_url: "https://m.media-amazon.com/images/I/817EuMPlOOL._AC_SL1500_.jpg",
-      description: "JanSport JS0A4QUE008 Superbreak Plus Black",
+      name: params["name"],
+      price: params["price"],
+      image_url: params["image_url"],
+      description: params["description"],
     )
     product.save
   end

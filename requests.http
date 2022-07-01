@@ -6,3 +6,11 @@ GET http://localhost:3000/products/2.json
 
 ### Post products create
 POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "JanSport JS0A4QUE008",
+  "price": 39,
+  "image_url": "https://m.media-amazon.com/images/I/817EuMPlOOL._AC_SL1500_.jpg",
+  "description": "JanSport JS0A4QUE008 Superbreak Plus Black"
+}
