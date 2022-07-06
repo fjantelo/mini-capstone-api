@@ -1,0 +1,13 @@
+{
+  id: @product.id,
+  name: @product.name,
+  price: @product.price,
+  image_url: @product.image_url,
+  description: @product.description,
+  friendly_created_at: @product.friendly_created_at,
+  is_dicounted?: @product.is_dicounted?,
+  tax: @product.tax,
+  total: @product.total,
+  created_at: @product.created_at,
+  updated_at: @product.updated_at
+}
