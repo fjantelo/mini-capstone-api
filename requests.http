@@ -20,8 +20,8 @@ PATCH http://localhost:3000/products/7.json
 Content-Type: application/json
 
 {
-  "price": 3
+  "name": ""
 }
 
 ### Delete products destroy
-DELETE http://localhost:3000/products/15.json
+DELETE http://localhost:3000/products/17.json
