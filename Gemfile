@@ -47,3 +47,4 @@ group :development do
 end
 
 gem 'jb'
+gem 'validate_url'
