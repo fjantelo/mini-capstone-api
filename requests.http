@@ -9,8 +9,8 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "JanSport JS0A4QUE008",
-  "price": 39,
+  "name": "JanSport JS0A4QUE00",
+  "price": 40,
   "image_url": "https://m.media-amazon.com/images/I/817EuMPlOOL._AC_SL1500_.jpg",
   "description": "JanSport JS0A4QUE008 Superbreak Plus Black"
 }
@@ -24,4 +24,4 @@ Content-Type: application/json
 }
 
 ### Delete products destroy
-DELETE http://localhost:3000/products/10.json
+DELETE http://localhost:3000/products/15.json
