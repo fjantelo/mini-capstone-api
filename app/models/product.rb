@@ -7,6 +7,8 @@ class Product < ApplicationRecord
   # validates :description, length: { in: 10..500 }
   # validates :image_url, url: true
 
+  belongs_to :supplier
+
   def friendly_created_at
     created_at.strftime("%B %e, %Y")
   end
@@ -27,9 +29,9 @@ class Product < ApplicationRecord
     price + tax
   end
 
-  def supplier
-    Supplier.find_by(id: supplier_id)
-  end
+  # def supplier
+  #   Supplier.find_by(id: supplier_id)
+  # end
 
   def image_url
     Image.where(product_id: id)
