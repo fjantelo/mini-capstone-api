@@ -9,5 +9,6 @@
   tax: @product.tax,
   total: @product.total,
   created_at: @product.created_at,
-  updated_at: @product.updated_at
+  updated_at: @product.updated_at,
+  supplier: @product.supplier
 }

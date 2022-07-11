@@ -8,6 +8,7 @@
     friendly_created_at: product.friendly_created_at,
     is_dicounted?: product.is_dicounted?,
     tax: product.tax,
-    total: product.total
+    total: product.total,
+    supplier: product.supplier
   }
 end
