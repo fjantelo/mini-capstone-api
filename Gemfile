@@ -48,3 +48,4 @@ end
 
 gem 'jb'
 gem 'validate_url'
+gem 'jwt'
