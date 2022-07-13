@@ -88,3 +88,6 @@ Content-Type: application/json
   "tax": 4.5,
   "total": 54.5
 }
+
+### Show order
+GET http://localhost:3000/orders/1.json
