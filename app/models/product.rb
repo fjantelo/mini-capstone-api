@@ -36,6 +36,6 @@ class Product < ApplicationRecord
   # end
 
   def image_url
-    Image.where(product_id: id)
+    Image.find_by(product_id: id).url # This should be changed to .where to show multiple images
   end
 end
