@@ -10,13 +10,14 @@ class OrdersController < ApplicationController
   end
 
   def create
+    product = Product.find_by(id: params["product_id"])
     order = Order.new(
-      user_id: params["user_id"],
+      user_id: current_user.id,
       product_id: params["product_id"],
       quantity: params["quantity"],
-      subtotal: params["subtotal"],
-      tax: params["tax"],
-      total: params["total"],
+      subtotal: product.price,
+      tax: product.tax,
+      total: product.total,
     )
     order.save
     render json: { "message": "Order created" }

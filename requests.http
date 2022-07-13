@@ -78,15 +78,12 @@ Content-Type: application/json
 
 ### Create order
 POST http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzY4MTd9.jsjOIfFCwM68fKGGhobBx0M2mNCT-YSoA4dlZFWNNdw
 Content-Type: application/json
 
 {
-  "user_id": 2,
   "product_id": 3,
-  "quantity": 1,
-  "subtotal": 50,
-  "tax": 4.5,
-  "total": 54.5
+  "quantity": 1
 }
 
 ### Index orders
