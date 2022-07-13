@@ -18,4 +18,7 @@ Rails.application.routes.draw do
 
   #sessions routes
   post "/sessions" => "sessions#create"
+
+  #order routes
+  post "/orders" => "orders#create"
 end
