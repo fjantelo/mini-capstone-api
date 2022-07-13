@@ -72,13 +72,13 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "jane@example.com",
+  "email": "billy@example.com",
   "password": "password"
 }
 
 ### Create order
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzY4MTd9.jsjOIfFCwM68fKGGhobBx0M2mNCT-YSoA4dlZFWNNdw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjAzMDh9.w6rLB1305VqkFuzhzUs0thhDQZDINPwbD7lZYsELXEg
 Content-Type: application/json
 
 {
@@ -88,9 +88,9 @@ Content-Type: application/json
 
 ### Index orders
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzY4MTd9.jsjOIfFCwM68fKGGhobBx0M2mNCT-YSoA4dlZFWNNdw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjAzMDh9.w6rLB1305VqkFuzhzUs0thhDQZDINPwbD7lZYsELXEg
 
 
 ### Show order
 GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzY4MTd9.jsjOIfFCwM68fKGGhobBx0M2mNCT-YSoA4dlZFWNNdw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjAzMDh9.w6rLB1305VqkFuzhzUs0thhDQZDINPwbD7lZYsELXEg
