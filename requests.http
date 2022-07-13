@@ -89,5 +89,9 @@ Content-Type: application/json
   "total": 54.5
 }
 
+### Index orders
+GET http://localhost:3000/orders.json
+
+
 ### Show order
 GET http://localhost:3000/orders/1.json
