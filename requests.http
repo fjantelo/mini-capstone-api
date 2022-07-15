@@ -1,6 +1,8 @@
+### Billy jwt
+
 ### Get products index
 GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzY4MTd9.jsjOIfFCwM68fKGGhobBx0M2mNCT-YSoA4dlZFWNNdw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjU5OTN9.MAyDkE7L7MKYUKpMRXTC8_Y22kVX9IKHT0arRpK0gaY
 
 ### Get products show
 GET http://localhost:3000/products/7.json
