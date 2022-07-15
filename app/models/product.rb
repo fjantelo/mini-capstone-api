@@ -15,7 +15,7 @@ class Product < ApplicationRecord
 
   # def categories
   #   category_products.map do |category_product|
-  #     category_product.categories
+  #     category_product.category
   #   end
   # end
 
