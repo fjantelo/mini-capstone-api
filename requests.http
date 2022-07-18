@@ -1,8 +1,9 @@
 ### Billy jwt
+@billy_jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgyNTM4NjB9.gvUnkYLRgu4xSBEao7JtxoKXhZQxTwLwYv3bkprgBts
 
 ### Get products index
 GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjU5OTN9.MAyDkE7L7MKYUKpMRXTC8_Y22kVX9IKHT0arRpK0gaY
+Authorization: Bearer {{billy_jwt}}
 
 ### Get products show
 GET http://localhost:3000/products/7.json
@@ -78,9 +79,9 @@ Content-Type: application/json
   "password": "password"
 }
 
-### Create order
+### Create order (buy now)
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjAzMDh9.w6rLB1305VqkFuzhzUs0thhDQZDINPwbD7lZYsELXEg
+Authorization: Bearer {{billy_jwt}}
 Content-Type: application/json
 
 {
@@ -90,9 +91,23 @@ Content-Type: application/json
 
 ### Index orders
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjAzMDh9.w6rLB1305VqkFuzhzUs0thhDQZDINPwbD7lZYsELXEg
+Authorization: Bearer {{billy_jwt}}
 
 
 ### Show order
 GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjAzMDh9.w6rLB1305VqkFuzhzUs0thhDQZDINPwbD7lZYsELXEg
+Authorization: Bearer {{billy_jwt}}
+
+### Create carted_products (shopping cart)
+POST http://localhost:3000/carted_products.json
+Authorization: Bearer {{billy_jwt}}
+Content-Type: application/json
+
+{
+    "product_id": 1,
+    "quantity": 1
+}
+
+### Carted products index
+GET http://localhost:3000/carted_products.json
+Authorization: Bearer {{billy_jwt}}
