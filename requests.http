@@ -111,3 +111,7 @@ Content-Type: application/json
 ### Carted products index
 GET http://localhost:3000/carted_products.json
 Authorization: Bearer {{billy_jwt}}
+
+### Carted products destory
+DELETE http://localhost:3000/carted_products/3.json
+Authorization: Bearer {{billy_jwt}}
