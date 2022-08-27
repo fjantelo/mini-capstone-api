@@ -1,5 +1,5 @@
 ### Billy jwt
-@billy_jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTgyNTM4NjB9.gvUnkYLRgu4xSBEao7JtxoKXhZQxTwLwYv3bkprgBts
+@billy_jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTk1NTE5MjF9.Lb72s1YOYhGrXDfc4qsOY781osFy2gCIgiTu2tNYWOg
 
 ### Get products index
 GET http://localhost:3000/products.json
@@ -10,25 +10,27 @@ GET http://localhost:3000/products/7.json
 
 ### Post products create
 POST http://localhost:3000/products.json
+Authorization: Bearer {{billy_jwt}}
 Content-Type: application/json
 
 {
-  "name": "JanSport JS0A4QUE00",
+  "name": "Random book",
   "price": 40,
-  "image_url": "https://m.media-amazon.com/images/I/817EuMPlOOL._AC_SL1500_.jpg",
-  "description": "JanSport JS0A4QUE008 Superbreak Plus Black"
+  "description": "You'll get a random book if you buy this",
+  "supplier_id": 4
 }
 
 ### Patch products update
 PATCH http://localhost:3000/products/7.json
+Authorization: Bearer {{billy_jwt}}
 Content-Type: application/json
 
 {
-  "name": ""
+  "name": "Actual pile of trash"
 }
 
 ### Delete products destroy
-DELETE http://localhost:3000/products/17.json
+DELETE http://localhost:3000/products/18.json
 
 
 
